@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events | Venues & Halls</title>
+
+<link rel="stylesheet" href="../pages/css/index.css">
+</head>
+
+<body>
+
+<header>
+  <div class="navbar">
+    <div class="logo">EVENTS</div>
+    <div class="menu-btn" id="menuBtn">☰</div>
+    <nav id="navMenu">
+      <a href="../index.html">HOME</a>
+      <a href="../pages/events.html">EVENTS</a>
+      <a href="../pages/registration.html">REGISTRATION</a>
+      <a href="../pages/contact.html">CONTACT</a>
+      <a href="../pages/budget_calculator.html">BUDGET</a>
+      <a href="../pages/about.html">ABOUT</a>
+    </nav>
+  </div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</header>
+
+<section class="hero fade" id="budget_calculator">
+  <div class="hero-content">
+    <h1>BUDGET CALCULATOR</h1>
+    <p>Plan your perfect event within your budget</p>
+  </div>
+</section>
+
+        <!-- Main Calculator -->
+        <main class="calculator-container">
+            <!-- Left Column: Configuration -->
+            <div class="left-column">
+                <div class="config-card">
+                    <h2>Event Configuration</h2>
+                    
+                    <div class="form-group">
+                        <label>Event Type</label>
+                        <select id="eventType">
+                            <option value="wedding">Wedding</option>
+                            <option value="graduation">Graduation</option>
+                            <option value="corporate">Corporate Event</option>
+                            <option value="birthday">Birthday Party</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Number of Guests</label>
+                        <div class="guest-display">
+                            <span id="guestCount">50</span>
+                            <span class="label">guests</span>
+                        </div>
+                        <input type="range" id="guestSlider" min="10" max="500" value="50" class="slider">
+                        <div class="slider-labels">
+                            <span>10</span>
+                            <span>500</span>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <button id="recommendBtn" class="btn recommend">
+                            <i class="fas fa-lightbulb"></i> Get Recommendations
+                        </button>
+                        <button id="resetBtn" class="btn reset">
+                            <i class="fas fa-redo"></i> Reset All
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Summary Card -->
+                <div class="summary-card">
+                    <h2>Budget Summary</h2>
+                    <div class="total">
+                        <span class="dollar">$</span>
+                        <span id="totalBudget">0</span>
+                    </div>
+                    <p class="subtitle">Total Event Budget</p>
+                    
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="label">Per Guest</span>
+                            <span class="value">$<span id="perGuest">0.00</span></span>
+                        </div>
+                        <div class="stat">
+                            <span class="label">Guests</span>
+                            <span class="value"><span id="displayGuests">50</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Categories -->
+            <div class="right-column">
+                <div class="categories-header">
+                    <h2>Budget Categories</h2>
+                    <p>Enter your budget for each category</p>
+                </div>
+                
+                <div class="categories">
+                    <!-- Category 1 -->
+                    <div class="category">
+                        <div class="category-header">
+                            <div class="icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h3>Venue</h3>
+                            <span class="percent" id="venue-percent">0%</span>
+                        </div>
+                        <p>Event location rental</p>
+                        <div class="input-group">
+                            <span class="dollar">$</span>
+                            <input type="number" id="venue" value="0" min="0" class="budget-input">
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" id="venue-progress"></div>
+                        </div>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div class="category">
+                        <div class="category-header">
+                            <div class="icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h3>Catering</h3>
+                            <span class="percent" id="catering-percent">0%</span>
+                        </div>
+                        <p>Food and beverages</p>
+                        <div class="input-group">
+                            <span class="dollar">$</span>
+                            <input type="number" id="catering" value="0" min="0" class="budget-input">
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" id="catering-progress"></div>
+                        </div>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div class="category">
+                        <div class="category-header">
+                            <div class="icon">
+                                <i class="fas fa-gift"></i>
+                            </div>
+                            <h3>Decoration</h3>
+                            <span class="percent" id="decoration-percent">0%</span>
+                        </div>
+                        <p>Flowers and decor</p>
+                        <div class="input-group">
+                            <span class="dollar">$</span>
+                            <input type="number" id="decoration" value="0" min="0" class="budget-input">
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" id="decoration-progress"></div>
+                        </div>
+                    </div>
+
+                    <!-- Category 4 -->
+                    <div class="category">
+                        <div class="category-header">
+                            <div class="icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <h3>Entertainment</h3>
+                            <span class="percent" id="entertainment-percent">0%</span>
+                        </div>
+                        <p>DJ, band, music</p>
+                        <div class="input-group">
+                            <span class="dollar">$</span>
+                            <input type="number" id="entertainment" value="0" min="0" class="budget-input">
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" id="entertainment-progress"></div>
+                        </div>
+                    </div>
+
+                    <!-- Category 5 -->
+                    <div class="category">
+                        <div class="category-header">
+                            <div class="icon">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <h3>Photography</h3>
+                            <span class="percent" id="photography-percent">0%</span>
+                        </div>
+                        <p>Photo & video services</p>
+                        <div class="input-group">
+                            <span class="dollar">$</span>
+                            <input type="number" id="photography" value="0" min="0" class="budget-input">
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" id="photography-progress"></div>
+                        </div>
+                    </div>
+
+                    <!-- Category 6 -->
+                    <div class="category">
+                        <div class="category-header">
+                            <div class="icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Invitations</h3>
+                            <span class="percent" id="invitations-percent">0%</span>
+                        </div>
+                        <p>Printing & sending</p>
+                        <div class="input-group">
+                            <span class="dollar">$</span>
+                            <input type="number" id="invitations" value="0" min="0" class="budget-input">
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" id="invitations-progress"></div>
+                        </div>
+                    </div>
+
+                    <!-- Category 7 -->
+                    <div class="category">
+                        <div class="category-header">
+                            <div class="icon">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <h3>Transportation</h3>
+                            <span class="percent" id="transportation-percent">0%</span>
+                        </div>
+                        <p>Guest transport</p>
+                        <div class="input-group">
+                            <span class="dollar">$</span>
+                            <input type="number" id="transportation" value="0" min="0" class="budget-input">
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" id="transportation-progress"></div>
+                        </div>
+                    </div>
+
+                    <!-- Category 8 -->
+                    <div class="category">
+                        <div class="category-header">
+                            <div class="icon">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <h3>Miscellaneous</h3>
+                            <span class="percent" id="miscellaneous-percent">0%</span>
+                        </div>
+                        <p>Other expenses</p>
+                        <div class="input-group">
+                            <span class="dollar">$</span>
+                            <input type="number" id="miscellaneous" value="0" min="0" class="budget-input">
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" id="miscellaneous-progress"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calculate Button -->
+                <div class="calculate-section">
+                    <button id="calculateBtn" class="calculate-btn">
+                        <i class="fas fa-calculator"></i> Calculate Total Budget
+                    </button>
+                    
+                    <div class="results" id="results">
+                        <h3>Final Budget Summary</h3>
+                        <div class="final-total">
+                            <span class="dollar">$</span>
+                            <span id="finalAmount">0</span>
+                        </div>
+                        <p id="resultText">Enter budget amounts above to see your total</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+  <nav class="footer-nav">
+    <a href="../index.html">Home</a>
+    <a href="../pages/about.html">About us</a>
+    <a href="../pages/contact.html">Contact us</a>
+    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+  <i class="fa-brands fa-facebook-f"></i>
+</a>
+  </nav>
+
+  <div class="copyright">
+    © 2026 Events · Luxury Event Planning
+  </div>
+</footer>
+    </div>
+
+    <script src="../pages/scripts/index.js"></script>
+</body>
+</html>

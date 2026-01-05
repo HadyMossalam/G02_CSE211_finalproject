@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events | Venues & Halls</title>
+
+<link rel="stylesheet" href="../pages/css/index.css">
+</head>
+
+<body>
+
+<header>
+  <div class="navbar">
+    <div class="logo">EVENTS</div>
+    <div class="menu-btn" id="menuBtn">☰</div>
+    <nav id="navMenu">
+      <a href="../index.html">HOME</a>
+      <a href="../part2_website_project/pages/events.html">EVENTS</a>
+      <a href="../pages/registration.html">REGISTRATION</a>
+      <a href="../pages/contact.html">CONTACT</a>
+      <a href="../pages/budget_calculator.html">BUDGET</a>
+      <a href="../pages/about.html">ABOUT</a>
+    </nav>
+  </div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</header>
+
+<section class="hero fade">
+  <div class="hero-content">
+    <h1>Contact Events</h1>
+    <p>Get in touch with our event planning team</p>
+  </div>
+</section>
+
+      <div class="contact-container">
+        <section class="contact-form">
+          <h2>Send Us a Message</h2>
+
+          <form id="contactForm" action="#" method="post">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input id="name" name="name" required placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input id="email" name="email" type="email" required placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input id="phone" name="phone" type="tel" placeholder="Enter your phone number">
+            </div>
+
+            <div class="form-group">
+              <label for="event-type">Event Type</label>
+              <select id="event-type" name="event-type">
+                <option value="">Select event type</option>
+                <option value="wedding">Wedding</option>
+                <option value="corporate">Corporate Event</option>
+                <option value="birthday">Birthday Party</option>
+                <option value="conference">Conference</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Tell us about your event..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" class="btn-submit">Send Message</button>
+              <button type="reset" class="btn-reset">Clear Form</button>
+            </div>
+          </form>
+        </section>
+
+        <aside class="contact-info">
+          <div class="info-card">
+            <h2>Contact Information</h2>
+
+            <div class="contact-detail">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:info@eventsx.com">info@eventsx.com</a></p>
+                <p><a href="mailto:support@eventsx.com">support@eventsx.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>Phone</h3>
+                <p><a href="tel:+201025682283">+20 1025682283</a></p>
+                <p><a href="tel:+201198756243">+20 1198756243</a></p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Address</h3>
+                <p>Galala</p>
+                <p>Galala city, Attaka</p>
+                <p>Suez, Egypt</p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h3>Business Hours</h3>
+                <p>Sat – Thur: 9:00 – 18:00</p>
+                <p>Fri: 13:00 – 18:00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://pinterest.com" target="_blank" aria-label="Pinterest">
+                <i class="fab fa-pinterest-p"></i>
+              </a>
+            </div>
+
+          </div>
+        </aside>
+      </div>
+
+      <section class="map-section">
+        <h2>Find Our Office</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.2008572924624!2d32.41416969999999!3d29.422925399999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1456ff262abb6e99%3A0x7ff81d3411272ae2!2sGalala%20City!5e0!3m2!1sen!2seg!4v1767471898837!5m2!1sen!2seg"
+          width="90%"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </section>
+
+      <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How do I book an event?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+
+            <div class="faq-answer">
+              <p>You can book an event by filling out our registration form, contacting us via email, or calling our office directly.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What types of events do you plan?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+
+            <div class="faq-answer">
+              <p>We specialize in weddings, corporate events, birthday parties, conferences, and custom celebrations of all sizes.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What is your response time?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+
+            <div class="faq-answer">
+              <p>We typically respond within 24 hours during business days. For urgent inquiries, please call us directly.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+<footer>
+  <nav class="footer-nav">
+    <a href="../index.html">Home</a>
+    <a href="../pages/about.html">About us</a>
+    <a href="../pages/contact.html">Contact us</a>
+    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+  <i class="fa-brands fa-facebook-f"></i>
+</a>
+  </nav>
+
+  <div class="copyright">
+    © 2026 Events · Luxury Event Planning
+  </div>
+</footer>
+
+<script src="../pages/scripts/index.js"></script>
+</body>
+</html>
