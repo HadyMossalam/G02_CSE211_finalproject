@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration - Events</title>
+
+  <link rel="stylesheet" href="../pages/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <div class="logo">EventsX</div>
+    <div class="menu-btn" id="menuBtn">☰</div>
+    <nav id="navMenu">
+      <a href="../index.html">HOME</a>
+      <a href="../pages/events.html">EVENTS</a>
+      <a href="../pages/registration.html">REGISTRATION</a>
+      <a href="../pages/contact.html">CONTACT</a>
+      <a href="../pages/budget_calculator.html">BUDGET</a>
+      <a href="../pages/about.html">ABOUT</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero fade" id="home">
+  <div class="hero-content">
+    <h1>Event Registration</h1>
+    <p>Join us for an unforgettable experience</p>
+  </div>
+</section>
+
+<div class="registration-container fade">
+  <h2>Register for Your Event</h2>
+
+  <form method="POST" action="php/submit_registration.php">
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>First Name *</label>
+        <input type="text" name="first_name" required>
+      </div>
+
+      <div class="form-group">
+        <label>Last Name *</label>
+        <input type="text" name="last_name" required>
+      </div>
+    </div>
+
+    <div class="form-group full-width">
+      <label>Email Address *</label>
+      <input type="email" name="email" required>
+    </div>
+
+    <div class="form-group full-width">
+      <label>Phone Number *</label>
+      <input type="tel" name="phone" required>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Event Type *</label>
+        <select name="event_type" required>
+          <option value="">-- Select Event --</option>
+          <option value="Wedding">Wedding</option>
+          <option value="Graduation">Graduation</option>
+          <option value="Birthday">Birthday Party</option>
+          <option value="Corporate">Corporate Event</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Event Date *</label>
+        <input type="date" name="event_date" id="eventDate" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Number of Guests *</label>
+        <input type="number" name="guest_count" min="1" required>
+      </div>
+
+      <div class="form-group">
+        <label>Budget (USD) *</label>
+        <input type="number" name="budget" min="0" required>
+      </div>
+    </div>
+
+    <div class="form-group full-width">
+      <label>Event Location *</label>
+      <input type="text" name="location" placeholder="City, Venue or Area" required>
+    </div>
+
+    <div class="form-group full-width">
+      <label>Services Interested In *</label>
+      <div class="checkbox-group">
+        <label>
+          <input type="checkbox" name="services[]" value="Planning">
+          Planning
+        </label>
+        <label>
+          <input type="checkbox" name="services[]" value="Design">
+          Design
+        </label>
+        <label>
+          <input type="checkbox" name="services[]" value="Production">
+          Production
+        </label>
+      </div>
+    </div>
+
+    <div class="form-group full-width">
+      <label>Additional Details</label>
+      <textarea name="message" placeholder="Tell us more about your event..."></textarea>
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" class="submit-btn">Register</button>
+      <button type="reset" class="reset-btn">Clear Form</button>
+    </div>
+
+  </form>
+
+</div>
+
+<footer>
+  <nav class="footer-nav">
+    <a href="../index.html">Home</a>
+    <a href="../pages/about.html">About us</a>
+    <a href="../pages/contact.html">Contact us</a>
+    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+  </nav>
+
+  <div class="copyright">
+    © 2026 Events · Luxury Event Planning
+  </div>
+</footer>
+
+<script src="../pages/scripts/index.js"></script>
+</body>
+</html>

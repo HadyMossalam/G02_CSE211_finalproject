@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
+
+  <link rel="stylesheet" href="../part2_website_project/pages/css/index.css">
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <div class="logo">EventsX</div>
+    <div class="menu-btn" id="menuBtn">☰</div>
+    <nav id="navMenu">
+      <a href="index.html">HOME</a>
+      <a href="../part2_website_project/pages/events.html">EVENTS</a>
+      <a href="../part2_website_project/pages/registration.html">REGISTRATION</a>
+      <a href="../part2_website_project/pages/contact.html">CONTACT</a>
+      <a href="../part2_website_project/pages/budget_calculator.html">BUDGET</a>
+      <a href="../part2_website_project/pages/about.html">ABOUT</a>
+    </nav>
+  </div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</header>
+
+<section class="hero fade" id="home">
+  <div class="hero-content">
+    <h1>Beautiful. Timeless. Elegant. </h1>
+    <p>Luxury weddings and elegant Eventsmade with care</p>
+  </div>
+</section>
+
+<section class="fade">
+  <div class="split">
+    <div>
+      <h3>Beautiful Event Experiences</h3>
+      <p>Guided by elegance and perfection</p>
+      <a href="../part2_website_project/pages/about.html"><button class="butn" >About us</button></a>
+    </div>
+    <img src="../part2_website_project/pages/images/hold.jpg" alt="">
+  </div>
+</section>
+
+<section class="alt-bg fade">
+  <div class="split">
+    <video width="400" controls>
+      <source src="../part2_website_project/pages/videos/invitation.mp4"></video>
+    <div>
+      <h3>What We Bring to the Table</h3>
+
+      <div class="accordion">
+
+  <div class="accordion-item">
+    <div class="accordion-title faq-question">
+      Planning <span class="faq-toggle">+</span>
+    </div>
+    <div class="accordion-content">
+      <p>Reserving wedding venues, graduation halls and event locations</p>
+      <p>We transform ideas into clear, actionable plans</p>
+      <p>We manage every detail so your event goes smoothly</p>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <div class="accordion-title faq-question">
+      Design <span class="faq-toggle">+</span>
+    </div>
+    <div class="accordion-content">
+      <p>Your ideas are our inspiration</p>
+      <p>We bring your dream ideas to life by turning imagination into beautifully crafted spaces</p>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <div class="accordion-title faq-question">
+      Production <span class="faq-toggle">+</span>
+    </div>
+    <div class="accordion-content">
+      <p>We bring everything to life with precision</p>
+      <p>We ensure flawless setup, smooth operations and perfect timing</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="events-layout fade">
+
+  <!-- LEFT: EVENT LISTINGS -->
+   <div class="events-left">
+ 
+    <div class="event-card" data-type="wedding" data-guests="400">
+      <img src="../part2_website_project/pages/images/royal.avif" alt="Royal Wedding Hall">
+      <div class="event-info">
+        <h3>Royal Wedding Hall</h3>
+        <p>Elegant indoor wedding venue with luxury design.</p>
+        <span>Up to 400 guests · Buffet & plated service · Fireworks, LED dance floor</span>
+      </div>
+    </div>
+
+    <div class="event-card" data-type="graduation" data-guests="600">
+      <img src="../part2_website_project/pages/images/garden_grad.avif" alt="Garden Graduation Venue">
+      <div class="event-info">
+        <h3>Garden Graduation Venue</h3>
+        <p>Outdoor venue surrounded by greenery.</p>
+        <span>Up to 600 guests · Live stations & snacks · Stage lighting, confetti</span>
+      </div>
+    </div>
+
+    <div class="event-card" data-type="wedding" data-guests="350">
+      <img src="../part2_website_project/pages/images/wedding_venue.webp" alt="Luxury Wedding Venue">
+      <div class="event-info">
+        <h3>Luxury Wedding Venue</h3>
+        <p>Premium venue for elegant and simple weddings.</p>
+        <span>Up to 350 guests · Custom meal options · Laser lighting, LED dance floor, DJ booth</span>
+      </div>
+    </div>
+
+    <div class="event-card" data-type="private" data-guests="80">
+      <img src="../part2_website_project/pages/images/engagement.avif" alt="Engagement Party Venue">
+      <div class="event-info">
+        <h3>Engagement Party Venue</h3>
+        <p>Romantic simple setup with cozy views.</p>
+        <span>Up to 80 guests · Seafood & grills · Fire show, LED dance floor</span>
+      </div>
+    </div>
+
+    <div class="event-card" data-type="corporate" data-guests="500">
+      <img src="../part2_website_project/pages/images/conference.jpg" alt="Corporate Conference Hall">
+      <div class="event-info">
+        <h3>Corporate Conference Hall</h3>
+        <p>Modern space for meetings and business events.</p>
+        <span>Up to 500 guests · Coffee breaks & prepared meals · Projectors, sound system</span>
+      </div>
+    </div>
+
+    <div class="event-card" data-type="birthday" data-guests="100">
+      <img src="../part2_website_project/pages/images/birthday.jpg" alt="Kids Birthday Garden">
+      <div class="event-info">
+        <h3>Kids Birthday Garden</h3>
+        <p>Colorful indoor venue designed for kids parties.</p>
+        <span>Up to 100 guests · Kids meals & sweets · Animators, balloon show</span>
+      </div>
+    </div>
+
+    <div class="event-card" data-type="private" data-guests="170">
+      <img src="../part2_website_project/pages/images/rooftop.webp" alt="Rooftop Celebration">
+      <div class="event-info">
+        <h3>Rooftop Celebration</h3>
+        <p>Open-air rooftop venue with city skyline views.</p>
+        <span>Up to 170 guests · Finger food & drinks · DJ booth, mood lighting</span>
+      </div>
+    </div>
+
+    <div class="event-card" data-type="exhibition" data-guests="700">
+      <img src="../part2_website_project/pages/images/trade_space.jpg" alt="Exhibition & Trade Show Space">
+      <div class="event-info">
+        <h3>Exhibition & Trade Show Space</h3>
+        <p>Large hall suitable for expos and product launches.</p>
+        <span>Up to 700 guests · Food trucks · Booth setup, branding</span>
+      </div>
+    </div>
+
+    <div class="event-card" data-type="private" data-guests="25">
+      <img src="../part2_website_project/pages/images/private_dinner.jpg" alt="Private Dinner Venue">
+      <div class="event-info">
+        <h3>Private Dinner Venue</h3>
+        <p>Elegant venue for intimate family gatherings.</p>
+        <span>Up to 25 guests · Fine dining menu · Live violin music</span>
+      </div>
+    </div>
+
+    <div class="event-card" data-type="concert" data-guests="2000">
+      <img src="../part2_website_project/pages/images/concert.jpg" alt="Outdoor Concert Arena">
+      <div class="event-info">
+        <h3>Outdoor Concert Arena</h3>
+        <p>Spacious outdoor venue for concerts and festivals.</p>
+        <span>Up to 2000 guests · Multiple food stands · Stage effects, LED screens</span>
+      </div>
+    </div>
+
+    <div class="event-card" data-type="wedding" data-guests="450">
+      <img src="../part2_website_project/pages/images/wedding_garden.jpg" alt="Classic Wedding Garden">
+      <div class="event-info">
+        <h3>Classic Wedding Garden</h3>
+        <p>Elegant garden venue for traditional weddings.</p>
+        <span>Up to 450 guests · Open buffet · Floral arches, fog machine</span>
+      </div>
+    </div>
+
+    <div class="event-card" data-type="exhibition" data-guests="20">
+      <img src="../part2_website_project/pages/images/trade_booth.webp" alt="Trade Show Booth">
+      <div class="event-info">
+        <h3>Trade Show Booth</h3>
+        <p>Large booth suitable for product launches.</p>
+        <span>Up to 20 guests · Food trucks · Booth setup, branding</span>
+      </div>
+    </div>
+
+  </div>
+
+  <aside class="events-right">
+  <h3>Search & Filter</h3>
+
+  <label>Search</label>
+  <input type="text" id="searchEvent">
+
+  <label>Event Type</label>
+  <select id="filterType">
+    <option value="all">All</option>
+    <option value="wedding">Wedding</option>
+    <option value="graduation">Graduation</option>
+    <option value="corporate">Corporate</option>
+    <option value="birthday">Birthday</option>
+    <option value="private">Private</option>
+    <option value="concert">Concert</option>
+    <option value="exhibition">Exhibition</option>
+  </select>
+
+  <label>Guests</label>
+  <input type="range" id="filterGuests" min="0" max="2000" value="2000">
+  <span id="guestValue">Up to 2000</span>
+
+  <button id="resetFilters" class="butn">Reset</button>
+</aside>
+
+</section>
+
+<section class="alt-bg fade">
+  <div class="toast">
+    <img src="../part2_website_project/pages/images/wedding.jpg" alt="" width="500">
+    <div class="toast-box">
+      <h2>Let’s Celebrate</h2>
+      <p>Get in touch</p>
+      <a href="../part2_website_project/pages/contact.html"><button class="butn" >Contact us</button></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <nav class="footer-nav">
+    <a href="../part2_website_project/index.html">Home</a>
+    <a href="../part2_website_project/pages/about.html">About us</a>
+    <a href="../part2_website_project/pages/contact.html">Contact us</a>
+    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+  <i class="fa-brands fa-facebook-f"></i>
+</a>
+  </nav>
+
+  <div class="copyright">
+    © 2025 EduConnect. All rights reserved.
+  </div>
+</footer>
+
+<script src="../part2_website_project/pages/scripts/index.js"></script>
+</body>
+</html>
