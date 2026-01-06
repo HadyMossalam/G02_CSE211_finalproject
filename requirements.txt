@@ -23,4 +23,5 @@ The application consists of 6 interconnected pages:
 3. budget_calculator.html – Financial planning tool
 4. registration.html – Event booking with validation
 5. contact.html – Multi-channel communication hub
+
 6. about.html – Mission and services overview
