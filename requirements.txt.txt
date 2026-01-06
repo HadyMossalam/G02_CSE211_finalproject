@@ -1,0 +1,26 @@
+EventsX - Event Planning Web Application
+
+Project Overview
+EventsX is a comprehensive, responsive web application designed to streamline event planning and management. Built as our final project for CSE211 Web Programming, this platform provides users with intuitive tools to browse venues, calculate budgets, and register for events—all within a seamless, modern interface.
+Key Features
+-Interactive Venue Slider  – Browse 12+ event spaces with smooth horizontal navigation
+-Smart Budget Calculator – Plan event finances with real-time updates and visual progress indicators
+-Form Validation System – Register with immediate feedback and error prevention
+- Multi-Channel Contact – Connect via forms, direct contact info, FAQ, and embedded Google Maps
+- Responsive Design – Fully functional across mobile, tablet, and desktop devices
+
+Technical Implementation
+- Frontend Stack:HTML5, CSS3, Vanilla JavaScript
+- Layout Systems: CSS Grid for complex structures, Flexbox for component alignment
+- JavaScript Features: DOM manipulation, event handling, form validation, interactive animations
+- External Resources: Font Awesome icons, Google Maps API integration
+- Code Quality: W3C validated HTML/CSS, cross-browser tested
+ 
+Project Structure
+The application consists of 6 interconnected pages:
+1. index.html – Homepage introduction
+2. events.html – Venue browsing with interactive slider
+3. budget_calculator.html – Financial planning tool
+4. registration.html – Event booking with validation
+5. contact.html – Multi-channel communication hub
+6. about.html – Mission and services overview
